@@ -64,37 +64,6 @@ class CreditScoreServiceTest {
             assertThat(resultResponse.creditReportInfo!!.score, `is`(514))
         }
     }
-//
-//    @Test
-//    fun getLegoSetsPagination() {
-//        runBlocking {
-//            enqueueResponse("legosets.json")
-//            val resultResponse = service.getSets().body()
-//
-//            assertNull(resultResponse!!.next)
-//            assertNull(resultResponse.previous)
-//        }
-//    }
-//
-//
-//    @Test
-//    fun getLegoSetItem() {
-//        runBlocking {
-//            enqueueResponse("legosets.json")
-//            val resultResponse = service.getSets().body()
-//            val legoSets = resultResponse!!.results
-//
-//            val legoSet = legoSets[0]
-//            assertThat(legoSet.id, `is`("30212-1"))
-//            assertThat(legoSet.name, `is`("Mirkwood Elf Guard"))
-//            assertThat(legoSet.year, `is`(2012))
-//            assertThat(legoSet.themeId, `is`(563))
-//            assertThat(legoSet.numParts, `is`(27))
-//            assertThat(legoSet.imageUrl, `is`("https://cdn.rebrickable.com/media/sets/30212-1.jpg"))
-//            assertThat(legoSet.url, `is`("https://rebrickable.com/sets/30212-1/mirkwood-elf-guard/"))
-//            assertThat(legoSet.lastModifiedDate, `is`("2016-04-23T12:25:04.325081Z"))
-//        }
-//    }
 
     private fun enqueueResponse(fileName: String, headers: Map<String, String> = emptyMap()) {
         val inputStream = javaClass.classLoader

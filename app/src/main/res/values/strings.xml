@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CreditScore</string>
+    <string name="equifax_score_band_description">Equifax Score Band Description</string>
+    <string name="your_credit_score">Your credit score</string>
+    <string name="credit_score_info">Credit Score Info</string>
+    <string name="percentage_of_credit_used">Percentage of credit used</string>
+    <string name="personal_type">Personal Type</string>
+    <string name="div_status">DIV Status</string>
 </resources>

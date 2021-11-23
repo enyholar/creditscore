@@ -1,6 +1,7 @@
 package com.gideondev.creditscore.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class CreditScoreResponse(
 
@@ -21,7 +22,7 @@ data class CreditScoreResponse(
 
 	@field:SerializedName("accountIDVStatus")
 	val accountIDVStatus: String? = null
-)
+):Serializable
 
 data class CreditReportInfo(
 
@@ -108,7 +109,7 @@ data class CreditReportInfo(
 
 	@field:SerializedName("monthsSinceLastDefaulted")
 	val monthsSinceLastDefaulted: Int? = null
-)
+):Serializable
 
 data class CoachingSummary(
 
@@ -126,4 +127,4 @@ data class CoachingSummary(
 
 	@field:SerializedName("selected")
 	val selected: Boolean? = null
-)
+):Serializable
