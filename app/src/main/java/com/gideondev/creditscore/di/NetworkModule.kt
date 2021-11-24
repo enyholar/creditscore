@@ -31,7 +31,6 @@ class NetworkModule (private val baseUrl: String)  {
     fun provideRetrofit(client: OkHttpClient, gson: Gson) = Retrofit.Builder()
         .client(client)
         .addConverterFactory(GsonConverterFactory.create(gson))
-//        .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
 
     @Provides
     @Singleton

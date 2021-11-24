@@ -4,7 +4,6 @@ import javax.inject.Inject
 import kotlinx.coroutines.launch
 import androidx.lifecycle.viewModelScope
 import com.gideondev.creditscore.repository.CreditScoreRepository
-import com.gideondev.creditscore.viewModel.Resource
 
 class CreditScoreViewModel
 @Inject

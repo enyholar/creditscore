@@ -7,6 +7,4 @@ interface CreditScoreApiInterface {
 
     @GET("endpoint.json")
     suspend fun getCreditScore(): CreditScoreResponse
-
-
 }

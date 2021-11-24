@@ -16,9 +16,7 @@ import org.junit.runners.JUnit4
 import org.mockito.Mockito.*
 
 @RunWith(JUnit4::class)
-class LegoSetViewModelTest {
-
-    private val themeId = 567
+class CreditScoreViewModelTest {
 
     @Rule
     @JvmField
@@ -26,8 +24,6 @@ class LegoSetViewModelTest {
 
     @get:Rule
     val testCoroutineRule = TestCoroutineRule()
-
-    private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
     private val repository = mock(CreditScoreRepository::class.java)
     private var viewModel = CreditScoreViewModel(repository)
@@ -41,19 +37,5 @@ class LegoSetViewModelTest {
         }
 
     }
-
-//    @Test
-//    fun doNotFetchWithoutObservers() {
-//        viewModel.themeId = themeId
-//        verify(repository, never()).observePagedSets(false, themeId, coroutineScope)
-//    }
-//
-//    @Test
-//    fun doNotFetchWithoutObserverOnConnectionChange() {
-//        viewModel.themeId = themeId
-//        viewModel.connectivityAvailable = true
-//
-//        verify(repository, never()).observePagedSets(true, themeId, coroutineScope)
-//    }
 
 }

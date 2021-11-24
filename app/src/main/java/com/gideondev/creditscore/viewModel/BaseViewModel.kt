@@ -2,7 +2,6 @@ package com.gideondev.creditscore.viewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.gideondev.creditscore.model.CreditScoreResponse
-import com.gideondev.creditscore.viewModel.Resource
 
 open class BaseViewModel : ViewModel() {
 
