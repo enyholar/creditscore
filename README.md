@@ -1,4 +1,4 @@
-# creditscore
+# Credit Score
 
 # This project is to fetch user credit score from backend and display it in a doughnut view
 
