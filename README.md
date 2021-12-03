@@ -13,9 +13,7 @@ The application is written entirely in Kotlin.
 Android Jetpack is used as an Architecture glue including but not limited to ViewModel, LiveData,
 Lifecycles, Navigation, Data Binding. See a complete list in "Libraries used" section.
 
-The application does network HTTP requests via Retrofit, OkHttp and GSON. Loaded data is saved to
-SQL based database Room, which serves as single source of truth and support offline mode.
-Paging library is used for data pagination online and offline.
+The application does network HTTP requests via Retrofit, OkHttp and GSON. 
 
 Kotlin Coroutines manage background threads with simplified code and reducing needs for callbacks.
 Combination of Coroutines and Kotlin build in functions (transformation, collections) are preferred
@@ -46,7 +44,6 @@ Android Jetpack is a set of components, tools and guidance to make great Android
 together the existing Support Library and Architecture Components and arranges them into four
 categories:
 
-![Android Jetpack](screenshots/jetpack_donut.png "Android Jetpack Components")
 
 * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
   multidex and automated testing.
